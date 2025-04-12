@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikizedia</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #f0f0f0;
+        }
+        body::selection{
+            background-color: #474747;
+            color: #fff;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 3px solid #474747;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        h1{
+            font-size: 2rem;
+            color: #fff;
+            background-color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.5s;
+            text-transform: capitalize;
+        }
+        h1:hover{
+            transform: rotate(15deg);
+            cursor: pointer; 
+            transition: 0.5s;
+            letter-spacing: 5px;
+            
+        }
+        span{
+            color: #5c5b5b;
+            font-weight: bold;
+            transition: 1s;
+        }
+        span:hover{
+            color: #000;
+            cursor: pointer;
+            transition: 0.7s;
+            
+        }
+        h2{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            margin-top: 50px;
+        }
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            padding: 20px;
+            line-height: 30px;
+            color: #474747;
+        }
+        li a{
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+        li a:hover{
+            background-color: #474747;
+            color: #fff;
+            transition: 0.2s;
+        }
+        h3{
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 50px;
+        }
+        ol{
+            text-align: center;
+            font-size: 1rem;
+            color: #474747;
+            display: flex;
+            flex-direction: column;
+            list-style-type: disc;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+            line-height: 1.6;
+            width: 50%;
+            margin: 0 auto;
+        }
+        li{
+            font-size: 1rem;
+            color: #474747;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #343333;
+            color: #fff;
+            width: 100%;
+
+        }
+        @media  screen and (max-width: 768px) {
+            h1{
+                font-size: 1.5rem;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            li a{
+                font-size: 1rem;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+            ol{
+                width: 80%;
+                font-size: 0.9rem;
+            }
+            *{
+                flex-direction: column;
+            }
+            li a{
+
+                margin: 70px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h1>wikizedia</h1>
+            </ul>
+
+            <ul>
+                <li><a href="#ip">IP</a></li>
+                <li><a href="#lan">LAN</a></li>
+                <li><a href="#wan">WAN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Search About { <span>IP Address</span> , <span>LAN Network</span> and <span>WAN network</span> }</h2>
+        <!-- IP -->
+        <div id="ip">
+            <h2>IP address</h2>
+            <p>
+                An IP address is a unique identifier assigned to every device connected to <br>
+                the internet or a local network. It allows devices to communicate and transfer data efficiently. 
+            </p>
+            <h3>Types of IP Addresses</h3>
+            
+            <ol>
+                <li><b>Public IP Address</b> –<span> Used to identify devices on the internet</span>.</li>
+                <br>
+                <li ><b>Private IP Address</b> –<span> Assigned within a local network (e.g., home or office)</span>.</li>
+                <br>
+                <li ><b>Dynamic IP Address</b> – <span>Changes periodically and is assigned by an ISP</span>.</li>
+            </ol>
+        </div>
+        <br>
+        <hr style="color: #5c5b5b;">
+        <!-- LAN -->
+        <div id="lan">
+            <h2>LAN Network</h2>
+            <p>
+                A Local Area Network (LAN) is a network that connects devices within a limited geographical area, such as a home, office, or campus. <br>
+                It allows devices to communicate and share resources like printers and files.
+            </p>
+            <h3>Properties of LAN</h3>
+            
+            <ol>
+                <li><b>High Speed</b> –<span> LANs typically offer high data transfer rates.</span></li>
+                <br>
+                <li ><b>Limited Range</b> –<span> LANs cover a small geographical area.</span></li>
+                <br>
+                <li ><b>Low Cost</b> –<span> Setting up a LAN is generally cost-effective.</span></li>
+            </ol>
+        </div>
+        <br>
+        <hr style="color: #5c5b5b;">
+        <!-- WAN -->
+        <div style="margin-bottom: 30px;" id="wan">
+            <h2>WAN Network</h2>
+            <p>
+                A Wide Area Network (WAN) is a network that covers a large geographical area, such as a city, country, or even the entire globe. <br>
+                It connects multiple LANs and allows long-distance communication.
+            </p>
+            <h3>Properties of WAN</h3>
+            
+            <ol>
+                <li><b>Large Coverage</b> –<span> WANs can span vast distances.</span></li>
+                <br>
+                <li ><b>Lower Speed</b> –<span> WANs generally have lower data transfer rates compared to LANs.</span></li>
+                <br>
+                <li ><b>Higher Cost</b> –<span> Setting up a WAN can be expensive due to infrastructure requirements.</span></li>
+            </ol>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wikizedia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
