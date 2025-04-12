@@ -11,6 +11,7 @@
         }
         body{
             background-color: #f0f0f0;
+            overflow-x: hidden;
         }
         body::selection{
             background-color: #474747;
@@ -112,6 +113,16 @@
             width: 100%;
 
         }
+        #c{
+            color: #474747;
+            font-weight: bold;
+        }
+        #c:hover{
+            color: #a6a6a6;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
         @media  screen and (max-width: 768px) {
             h1{
                 font-size: 1.5rem;
@@ -217,8 +228,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Wikizedia. All rights reserved.</p>
-        <p>&copy; 2025 Gasser Zayed. All rights reserved.</p>
+        <span id="c">&copy; 2025 Wikizedia. All rights reserved.</span>
+        <br>
+        <span id="c"> &copy; 2025 Gasser Zayed. All rights reserved.</span>
     </footer>
 </body>
 </html>
